@@ -18,7 +18,7 @@ public class screenshot  {
 	public void takescreen(WebDriver d) throws IOException
 	{
 		
-		Screenshot s=new AShot().takeScreenshot(d);
+		Screenshot s=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(500)).takeScreenshot(d);
 		
 		ImageIO.write(s.getImage(),"JPG",new File("D:\\eclipse\\jenkintest\\screenshots\\i.jpg"));
 		
