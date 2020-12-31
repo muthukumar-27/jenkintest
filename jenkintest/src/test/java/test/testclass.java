@@ -20,8 +20,6 @@ public class testclass {
 	  d=new ChromeDriver();
 	  
 	  d.get("http://www.google.com");
-	  
-	  
 	  googlehomepage g=new googlehomepage(d);
 	  g.searching();
 	  g.clicking();
